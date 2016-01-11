@@ -4,15 +4,20 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import org.slf4j.LoggerFactory;
+
+import com.fasterxml.jackson.annotation.JsonView;
+
 import org.slf4j.Logger;
 public class Answer {
+
 
 	
 	private final Long id;
 	private String question;
+
 	static  final Logger LOG = LoggerFactory.getLogger(Answer.class);
 
-
+	
 	public Answer(long id, String question)  {
 		this.id = id;
 		this.question = question;
